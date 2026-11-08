@@ -6,6 +6,11 @@ A community collection of notebooks and ESMValTool workflows for evaluating ACCE
 
 **[Browse the recipe gallery](https://access-nri.github.io/ACCESS-Evaluation-recipes/)** to search the collection and filter by ACCESS model, scientific subject, realm, tool, or recipe type. Click the screenshot to open the live gallery.
 
+The [Russell Southern Ocean comparison](web/results/russell-1986-2005/index.html)
+presents a completed Gadi demonstration combining ACCESS-OM3 and ACCESS-CM3 with
+selected CMIP6/CMIP7 models: 35 plots across 16 diagnostic groups, with coverage
+and validation scope documented alongside the results.
+
 [![Screenshot of the ACCESS Evaluation Recipes gallery showing the model diagram and recipe counts](docs/gallery-screenshot.jpg)](https://access-nri.github.io/ACCESS-Evaluation-recipes/)
 
 The model spotlight features ACCESS-ESM1.5, ACCESS-ESM1.6, ACCESS-OM2, ACCESS-OM3, ACCESS-ESM3, and ACCESS-CM3. Counts reflect recipes with an explicit model input or comparison, so a model without tagged recipes may still be usable with a general method. Previews illustrate a notebook; they do not establish that its data or environment is current. To build the static gallery in [`web/`](web/) locally, run `python -m pip install -r requirements-site.txt` followed by `python scripts/build_site.py`.

@@ -1,0 +1,22 @@
+.case-study { max-width: 1260px; margin: auto; padding: 2rem; line-height: 1.65; }
+.case-study h1 { max-width: 1000px; font: 800 clamp(2rem, 4.5vw, 3.6rem)/1.13 Manrope, sans-serif; letter-spacing: -.04em; }
+.case-study h2 { font-family: Manrope, sans-serif; line-height: 1.3; }
+.case-study a { color: #09665d; text-underline-offset: .18em; }
+.case-study section { margin-bottom: 2.5rem; scroll-margin-top: 1rem; }
+.case-study .lead { max-width: 1000px; font-size: 1.2rem; }
+.result-stats { display: flex; flex-wrap: wrap; gap: 1rem 2.5rem; padding: 1rem 0; color: #134c52; }
+.result-stats strong { display: block; font: 800 2rem Manrope, sans-serif; }
+.scope-note { background: #eaf3ef; border-left: 4px solid #238b77; padding: 1rem; }
+.table-scroll { overflow-x: auto; }
+.case-study table { border-collapse: collapse; width: 100%; text-align: left; background: white; }
+.case-study th, .case-study td { border-bottom: 1px solid #dfeae5; padding: .6rem .8rem; }
+.case-study caption { text-align: left; padding-bottom: .7rem; }
+.case-study article { background: white; border: 1px solid #dfeae5; border-radius: 12px; padding: 1.5rem; margin: 1.5rem 0; scroll-margin-top: 1rem; }
+.case-study article > p { overflow-wrap: anywhere; }
+.plot-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 430px), 1fr)); align-items: start; gap: 1rem; }
+.plot-grid figure { margin: 0; border: 1px solid #dfeae5; padding: .5rem; border-radius: 6px; }
+.plot-grid img { display: block; width: 100%; height: auto; max-height: 500px; object-fit: contain; }
+.plot-grid figcaption { color: #557078; font-size: .85rem; }
+.case-study summary { cursor: pointer; font-weight: 700; }
+.case-study details a { overflow-wrap: anywhere; }
+@media (max-width: 740px) { .case-study { padding: 1.2rem; } .case-study article { padding: 1rem; } }
