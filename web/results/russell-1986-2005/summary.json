@@ -1,0 +1,517 @@
+{
+  "scope": "Published summary of an archived diagnostic rerun; not an independent scientific validation",
+  "period": [
+    1986,
+    2005
+  ],
+  "upstream_commit": "862c67571361ab6d094fbc3662c4c327053dcab9",
+  "execution_mode": "diagnostic rerun of retained full-period ESMValCore/MOPPy CMOR preprocessing",
+  "runtime": "Gadi analysis3-26.10",
+  "runtime_versions": {
+    "esmvalcore": "2.15.0",
+    "esmvaltool": "2.15.0",
+    "scitools-iris": "3.14.1",
+    "numpy": "2.4.6",
+    "netCDF4": "1.7.2"
+  },
+  "group_count": 16,
+  "plot_count": 35,
+  "product_count": 107,
+  "baseline_count": 85,
+  "input_count": 182,
+  "native_group_counts": {
+    "ACCESS-OM3": 14,
+    "ACCESS-CM3": 8
+  },
+  "source_report_sha256": {
+    "validation.json": "086ce5bf17f7bf097a4c24c300d7af8cd6ddde6bb64f90737769b79eb60215f5",
+    "plan.json": "ce05cb12ba2b274576844561bba549c4531ae0dbb15db3d6476e538ea0f9599f",
+    "collection-manifest.json": "f161e0909dbbfa3233f98b863985f505511f7f21d040c93abe44d089344f1731",
+    "bundle/manifest.json": "c57107539c639656ad3363f20afa7ababc99bcc75782b8283a975503a12af409"
+  },
+  "limitations": [
+    "CM3 is a present-day control: dates are model years, not historical forcing.",
+    "CM3 sea ice awaits verified CICE grid/area/mask; carbon and pH inputs unavailable.",
+    "OM3 has no atmospheric tauu or exact pH input.",
+    "Figure 9 fits use selected CMIP6 models only; native points are excluded.",
+    "Original Russell transport approximations, front threshold convention and March sea-ice season retained."
+  ],
+  "groups": [
+    {
+      "id": "Figure_1",
+      "title": "Atmospheric wind stress",
+      "models": [
+        "ACCESS-CM3",
+        "ACCESS-ESM1-5",
+        "ACCESS-ESM1-6",
+        "CanESM5",
+        "CanESM6-0-MR",
+        "GFDL-ESM4",
+        "IPSL-CM6A-LR",
+        "UKESM1-3-LL"
+      ],
+      "native_models": [
+        "ACCESS-CM3"
+      ],
+      "product_count": 8,
+      "baseline_count": 7,
+      "valid": true,
+      "plots": [
+        {
+          "path": "plots/Figure_1/Russell_polar-contour_tauu_1986-2005_page1.png",
+          "sha256": "82db5254d1d3f5d8af65e03b7bda2cdfdbe5dcb59668a46b1982578d2cf84b4b"
+        },
+        {
+          "path": "plots/Figure_1/Russell_polar-contour_tauu_1986-2005_page2.png",
+          "sha256": "f3cb7cbc739b466c6ea91ec5d5c1e89b39e5924c1accbcbe87352c6d766a7097"
+        },
+        {
+          "path": "plots/Figure_1/Russell_polar-contour_tauu_1986-2005_page3.png",
+          "sha256": "c0336c27339e32534b477f14d23ac54b1ee35078702dc7e6b8323016efc8e398"
+        },
+        {
+          "path": "plots/Figure_1/Russell_polar-contour_tauu_1986-2005_page4.png",
+          "sha256": "6f1bf2c43e4660e30b5c103af8c8697cc9b18c76b9e7880345c49b52acf146e8"
+        }
+      ]
+    },
+    {
+      "id": "Figure_2",
+      "title": "Ocean surface wind stress",
+      "models": [
+        "ACCESS-CM3",
+        "ACCESS-ESM1-5",
+        "ACCESS-ESM1-6",
+        "ACCESS-OM3",
+        "CanESM5",
+        "CanESM6-0-MR",
+        "GFDL-ESM4",
+        "IPSL-CM6A-LR",
+        "UKESM1-3-LL"
+      ],
+      "native_models": [
+        "ACCESS-CM3",
+        "ACCESS-OM3"
+      ],
+      "product_count": 9,
+      "baseline_count": 7,
+      "valid": true,
+      "plots": [
+        {
+          "path": "plots/Figure_2/russell18jgr_fig2_1986-2005.png",
+          "sha256": "4413611002856fc85dee499ec6823bf99b45e87008e8a1d6091910184e7e3a93"
+        }
+      ]
+    },
+    {
+      "id": "Figure_3b",
+      "title": "Subantarctic Front",
+      "models": [
+        "ACCESS-CM3",
+        "ACCESS-ESM1-5",
+        "ACCESS-ESM1-6",
+        "ACCESS-OM3",
+        "CanESM5",
+        "CanESM6-0-MR",
+        "GFDL-ESM4",
+        "IPSL-CM6A-LR",
+        "UKESM1-3-LL"
+      ],
+      "native_models": [
+        "ACCESS-CM3",
+        "ACCESS-OM3"
+      ],
+      "product_count": 9,
+      "baseline_count": 7,
+      "valid": true,
+      "plots": [
+        {
+          "path": "plots/Figure_3b/Russell18jgr_fig3_Subantarctic-Fronts_1986-2005.png",
+          "sha256": "9cbb1b995ada4f8deedc259b6dbbc913d7c8e0ca16b1ab3a2ebbac07e961f9f6"
+        }
+      ]
+    },
+    {
+      "id": "Figure_3b-2",
+      "title": "Polar Front",
+      "models": [
+        "ACCESS-CM3",
+        "ACCESS-ESM1-5",
+        "ACCESS-ESM1-6",
+        "ACCESS-OM3",
+        "CanESM5",
+        "CanESM6-0-MR",
+        "GFDL-ESM4",
+        "IPSL-CM6A-LR",
+        "UKESM1-3-LL"
+      ],
+      "native_models": [
+        "ACCESS-CM3",
+        "ACCESS-OM3"
+      ],
+      "product_count": 9,
+      "baseline_count": 7,
+      "valid": true,
+      "plots": [
+        {
+          "path": "plots/Figure_3b-2/russell18jgr_fig3_Polar-Front-position_1986-2005.png",
+          "sha256": "8b93569280691e9d438f41cc9bf0f0c8f74eecf68067399ce650da0eef9426f9"
+        }
+      ]
+    },
+    {
+      "id": "Figure_4",
+      "title": "Drake Passage section velocity",
+      "models": [
+        "ACCESS-CM3",
+        "ACCESS-ESM1-5",
+        "ACCESS-ESM1-6",
+        "ACCESS-OM3",
+        "CanESM5",
+        "CanESM6-0-MR",
+        "IPSL-CM6A-LR",
+        "UKESM1-3-LL"
+      ],
+      "native_models": [
+        "ACCESS-CM3",
+        "ACCESS-OM3"
+      ],
+      "product_count": 8,
+      "baseline_count": 6,
+      "valid": true,
+      "plots": [
+        {
+          "path": "plots/Figure_4/Russell18jgr-fig4_1986-2005_page1.png",
+          "sha256": "925e0b823b114b4621e0ce69135d7abf0ed9d4c8fecf93d71d5c9e54ef9ab543"
+        },
+        {
+          "path": "plots/Figure_4/Russell18jgr-fig4_1986-2005_page2.png",
+          "sha256": "e95a5fb82589b8ccd93dce52dd2c0c2e9cd036bf385fcc57e3c89e21eb3fc998"
+        },
+        {
+          "path": "plots/Figure_4/Russell18jgr-fig4_1986-2005_page3.png",
+          "sha256": "1caa4bda34d4c81eb15b10fab3bd93f7dfefe8b77dd96fe6beaf1173bef4e48c"
+        },
+        {
+          "path": "plots/Figure_4/Russell18jgr-fig4_1986-2005_page4.png",
+          "sha256": "46795f94472419b42fedd53479bae4266311d5e52888f1de38d177e5e1020bfe"
+        }
+      ]
+    },
+    {
+      "id": "Figure_5",
+      "title": "Sea-ice extent",
+      "models": [
+        "ACCESS-ESM1-5",
+        "ACCESS-ESM1-6",
+        "ACCESS-OM3",
+        "CanESM5",
+        "CanESM6-0-MR",
+        "GFDL-ESM4",
+        "IPSL-CM6A-LR",
+        "UKESM1-3-LL"
+      ],
+      "native_models": [
+        "ACCESS-OM3"
+      ],
+      "product_count": 8,
+      "baseline_count": 7,
+      "valid": true,
+      "plots": [
+        {
+          "path": "plots/Figure_5/russell18jgr-fig5_siconc_1986-2005_page1.png",
+          "sha256": "35414bb85f57ae9c5b8a6f5f5d8bf0ae76c26da7080741dc7a78df936926e286"
+        },
+        {
+          "path": "plots/Figure_5/russell18jgr-fig5_siconc_1986-2005_page2.png",
+          "sha256": "dcb178aa9c0e026cf6ebf57093b46304c573b324eb5e397d469133bc3b0c1295"
+        }
+      ]
+    },
+    {
+      "id": "Figure_5g",
+      "title": "Southern Hemisphere sea-ice area",
+      "models": [
+        "ACCESS-ESM1-5",
+        "ACCESS-ESM1-6",
+        "ACCESS-OM3",
+        "CanESM5",
+        "CanESM6-0-MR",
+        "GFDL-ESM4",
+        "IPSL-CM6A-LR"
+      ],
+      "native_models": [
+        "ACCESS-OM3"
+      ],
+      "product_count": 7,
+      "baseline_count": 6,
+      "valid": true,
+      "plots": [
+        {
+          "path": "plots/Figure_5g/russell18jgr-fig5g_siconc_1986-2005.png",
+          "sha256": "ecf0a5cb4dedb7458ca8da04009a53ae4ece7c6e4f645e869227f5f0250960ab"
+        }
+      ]
+    },
+    {
+      "id": "Figure_6a",
+      "title": "Density-layer volume transport",
+      "models": [
+        "ACCESS-CM3",
+        "ACCESS-ESM1-5",
+        "ACCESS-ESM1-6",
+        "ACCESS-OM3",
+        "UKESM1-3-LL"
+      ],
+      "native_models": [
+        "ACCESS-CM3",
+        "ACCESS-OM3"
+      ],
+      "product_count": 5,
+      "baseline_count": 3,
+      "valid": true,
+      "plots": [
+        {
+          "path": "plots/Figure_6a/russell18jgr-fig6a_ACCESS-CM3_1986-2005.png",
+          "sha256": "9c7f8e7a6890eacbc9103809df309c1df53e25d8036543441249724e3ffc96a8"
+        },
+        {
+          "path": "plots/Figure_6a/russell18jgr-fig6a_ACCESS-ESM1-5_1986-2005.png",
+          "sha256": "3f2ceeecc6ce87b401d27bdf76db7716832fb327d9ecaac74b21d4f5fc73e7f6"
+        },
+        {
+          "path": "plots/Figure_6a/russell18jgr-fig6a_ACCESS-ESM1-6_1986-2005.png",
+          "sha256": "2146bae9f28e0b1ab0a77f83df2be25d9dfc78bad344269f351bb4accfb5453d"
+        },
+        {
+          "path": "plots/Figure_6a/russell18jgr-fig6a_ACCESS-OM3_1986-2005.png",
+          "sha256": "f6783abcb3b2466be8cc70b002681703e2140f9784e3e9f6d0d2401df02ae252"
+        },
+        {
+          "path": "plots/Figure_6a/russell18jgr-fig6a_UKESM1-3-LL_1986-2005.png",
+          "sha256": "d0fc5da8de9e62d488e5a020faa58e7a4aa2c09bfa5a757da09523629c7ba554"
+        }
+      ]
+    },
+    {
+      "id": "Figure_6b",
+      "title": "Density-layer heat transport",
+      "models": [
+        "ACCESS-CM3",
+        "ACCESS-ESM1-5",
+        "ACCESS-ESM1-6",
+        "ACCESS-OM3",
+        "UKESM1-3-LL"
+      ],
+      "native_models": [
+        "ACCESS-CM3",
+        "ACCESS-OM3"
+      ],
+      "product_count": 5,
+      "baseline_count": 3,
+      "valid": true,
+      "plots": [
+        {
+          "path": "plots/Figure_6b/russell18jgr-fig6b_ACCESS-CM3_1986-2005.png",
+          "sha256": "b8ba53d6ddd887e9b8856b4f44b39bb3db228ede15f0153c2363deceb6052384"
+        },
+        {
+          "path": "plots/Figure_6b/russell18jgr-fig6b_ACCESS-ESM1-5_1986-2005.png",
+          "sha256": "c9548ca4c969da0d23489f36c8b67cb6b161220c19efc3f9f09a562417ab1c3f"
+        },
+        {
+          "path": "plots/Figure_6b/russell18jgr-fig6b_ACCESS-ESM1-6_1986-2005.png",
+          "sha256": "57e6abc6e8fb6065bd1b4791e35193c59a9bda7ca47b43790bbed0280a426a0f"
+        },
+        {
+          "path": "plots/Figure_6b/russell18jgr-fig6b_ACCESS-OM3_1986-2005.png",
+          "sha256": "bb147c898ee4fa5322fe0e8fb0ef4b6ad590580a6104c932977c2c741cc95250"
+        },
+        {
+          "path": "plots/Figure_6b/russell18jgr-fig6b_UKESM1-3-LL_1986-2005.png",
+          "sha256": "436796bdf758169de3f78854cb0e1c25d18bb3280a899b5ce8c63629446ed44e"
+        }
+      ]
+    },
+    {
+      "id": "Figure_7",
+      "title": "Surface carbon flux",
+      "models": [
+        "ACCESS-ESM1-5",
+        "ACCESS-ESM1-6",
+        "ACCESS-OM3",
+        "CanESM5",
+        "GFDL-ESM4",
+        "IPSL-CM6A-LR",
+        "UKESM1-3-LL"
+      ],
+      "native_models": [
+        "ACCESS-OM3"
+      ],
+      "product_count": 7,
+      "baseline_count": 6,
+      "valid": true,
+      "plots": [
+        {
+          "path": "plots/Figure_7/Russell_polar-contour_fgco2_1986-2005_page1.png",
+          "sha256": "7054306326155e413e4e9a350151124c2ca6f0041dd3e82587ba5d83823521ed"
+        },
+        {
+          "path": "plots/Figure_7/Russell_polar-contour_fgco2_1986-2005_page2.png",
+          "sha256": "de4ace63e08931f5204dd1c488918b6309d7900499e893f23d88c2eced0ec8cc"
+        },
+        {
+          "path": "plots/Figure_7/Russell_polar-contour_fgco2_1986-2005_page3.png",
+          "sha256": "1498f3b83e021b88a24e503679924715f5073f2e125778d86d3785a62fbce1c9"
+        },
+        {
+          "path": "plots/Figure_7/Russell_polar-contour_fgco2_1986-2005_page4.png",
+          "sha256": "5468877e48c33fd358c5805643c24e4ffb4fc1d31d3c784c4ffea6daa13edd23"
+        }
+      ]
+    },
+    {
+      "id": "Figure_7h",
+      "title": "Zonal carbon flux",
+      "models": [
+        "ACCESS-ESM1-5",
+        "ACCESS-ESM1-6",
+        "ACCESS-OM3",
+        "CanESM5",
+        "GFDL-ESM4",
+        "IPSL-CM6A-LR",
+        "UKESM1-3-LL"
+      ],
+      "native_models": [
+        "ACCESS-OM3"
+      ],
+      "product_count": 7,
+      "baseline_count": 6,
+      "valid": true,
+      "plots": [
+        {
+          "path": "plots/Figure_7h/Russell_figure7h_fgco2_1986-2005.png",
+          "sha256": "88dde4c828450b63aad7cfee4540b71a6c6ceb0be2b817ec6e2b23591a504c55"
+        }
+      ]
+    },
+    {
+      "id": "Figure_7i",
+      "title": "Cumulative carbon flux",
+      "models": [
+        "ACCESS-ESM1-5",
+        "ACCESS-ESM1-6",
+        "ACCESS-OM3",
+        "CanESM5",
+        "GFDL-ESM4",
+        "IPSL-CM6A-LR"
+      ],
+      "native_models": [
+        "ACCESS-OM3"
+      ],
+      "product_count": 6,
+      "baseline_count": 5,
+      "valid": true,
+      "plots": [
+        {
+          "path": "plots/Figure_7i/Russell_figure7i_fgco2_1986-2005.png",
+          "sha256": "e4a9e0b3159a306c59eaeea1cd962e522a4fd577f638ee26f62702de922bac41"
+        }
+      ]
+    },
+    {
+      "id": "Figure_8",
+      "title": "Surface pH",
+      "models": [
+        "GFDL-ESM4",
+        "IPSL-CM6A-LR",
+        "UKESM1-3-LL"
+      ],
+      "native_models": [],
+      "product_count": 3,
+      "baseline_count": 3,
+      "valid": true,
+      "plots": [
+        {
+          "path": "plots/Figure_8/Russell_polar-contour_ph_1986-2005_page1.png",
+          "sha256": "4abbf0ddd9f7b35328ffd1fb889b18660a2d0c7e59b3a55130bab3a85307e885"
+        },
+        {
+          "path": "plots/Figure_8/Russell_polar-contour_ph_1986-2005_page2.png",
+          "sha256": "9d4ed83c2aaf6ce1c27da260b6fff83c97d67c9964c13e161ebc79736a363d0d"
+        }
+      ]
+    },
+    {
+      "id": "Figure_9a",
+      "title": "Heat flux and wind-band width",
+      "models": [
+        "ACCESS-CM3",
+        "ACCESS-ESM1-5",
+        "ACCESS-OM3",
+        "CanESM5",
+        "GFDL-ESM4",
+        "IPSL-CM6A-LR"
+      ],
+      "native_models": [
+        "ACCESS-CM3",
+        "ACCESS-OM3"
+      ],
+      "product_count": 6,
+      "baseline_count": 4,
+      "valid": true,
+      "plots": [
+        {
+          "path": "plots/Figure_9a/russell18jgr-fig9a_1986-2005.png",
+          "sha256": "3afdc3efbca1119958d668ba10fbc9dba0451c6467f8dce13e086479ae32ee95"
+        }
+      ]
+    },
+    {
+      "id": "Figure_9b",
+      "title": "Carbon flux and wind-band width",
+      "models": [
+        "ACCESS-ESM1-5",
+        "ACCESS-OM3",
+        "CanESM5",
+        "GFDL-ESM4",
+        "IPSL-CM6A-LR"
+      ],
+      "native_models": [
+        "ACCESS-OM3"
+      ],
+      "product_count": 5,
+      "baseline_count": 4,
+      "valid": true,
+      "plots": [
+        {
+          "path": "plots/Figure_9b/russell18jgr-fig9b_1986-2005.png",
+          "sha256": "12d6d59ba5db6f1cc7bbaa5b422497625154066195e0abad04d109a30f4161a7"
+        }
+      ]
+    },
+    {
+      "id": "Figure_9c",
+      "title": "Heat and carbon flux",
+      "models": [
+        "ACCESS-ESM1-5",
+        "ACCESS-OM3",
+        "CanESM5",
+        "GFDL-ESM4",
+        "IPSL-CM6A-LR"
+      ],
+      "native_models": [
+        "ACCESS-OM3"
+      ],
+      "product_count": 5,
+      "baseline_count": 4,
+      "valid": true,
+      "plots": [
+        {
+          "path": "plots/Figure_9c/russell18jgr-fig9c_1986-2005.png",
+          "sha256": "647d90d76296d3a9d21f3b68632a32c57a55386d618e507fb5b642d4bfd8d10d"
+        }
+      ]
+    }
+  ]
+}
